@@ -67,6 +67,15 @@ namespace FG.Aspx {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator vpass;
         
         /// <summary>
+        /// Control lrepor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lrepor;
+        
+        /// <summary>
         /// Control btingresar.
         /// </summary>
         /// <remarks>
@@ -74,14 +83,5 @@ namespace FG.Aspx {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btingresar;
-        
-        /// <summary>
-        /// Control SqlDataSource1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

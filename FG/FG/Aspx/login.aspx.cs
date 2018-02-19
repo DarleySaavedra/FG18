@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace FG.Aspx
 {
@@ -17,28 +19,47 @@ namespace FG.Aspx
 
         protected void btingresar_Click(object sender, EventArgs e)
         {
-            
-            
-            //Para ejecutar el sql source
-            DataView dvSql = (DataView)SqlDataSource1.Select(DataSourceSelectArguments.Empty);
-
-            int numero;
-            numero = 0;
-            if (dvSql.Count > 0)
+             try
             {
-                numero = 1;
+                Game.Seguridad.DataSetTableAdapters.UsuariosTableAdapter obj = new Game.Seguridad.DataSetTableAdapters.UsuariosTableAdapter();
+                string TipoUser = obj.login(tbusu.Text, tbpass.Text).ToString().ToUpper();
+                string nombrecom = obj.ConsultarNombre(tbusu.Text, tbpass.Text).ToString();
+              
+
+               
+             if (!TipoUser.Equals("ALUMNO"))
+                {
+                    Session["Usuarios"] = "DOCENTE";
+                    Response.Redirect("PerfilDoc.aspx?msg="+nombrecom);
+                    
+
+                    //Cookie
+                    //HttpCookie objCookie = new HttpCookie("TimeAcceso");
+                    //objCookie.Values.Add("Time", System.DateTime.Now.ToString());
+                    //objCookie.Values.Add("ForeColor", "White");
+
+                    //objCookie.Expires = System.DateTime.Now.AddHours(1);
+                    //Response.Cookies.Add(objCookie);
+
+                    //////leer valores de la cookie
+                    ////HttpCookie objCookie = Response.Cookies["TimeAcceso"];
+
+                }
+                else
+                { 
+                 
+                        Response.Redirect("PerfilAlumn.aspx?msg=" +nombrecom );
+                  }
             }
-            if (numero == 1)
+            catch (Exception )
             {
-                //Session["usuario"] = dvSql[0].DataView[0];
-                Session["usuario"] = dvSql[0].Row[0];
-                Response.Redirect("PerfilAlumn.aspx");
+                lrepor.Text = "Usuario no autenticado";
+                //lrepor.Text = ("Usuario No Existe");
+
             }
-
-            tbusu.Text = "";
-            tbpass.Text = "";
-
-    
         }
+
     }
 }
+
+

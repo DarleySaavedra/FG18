@@ -1,51 +1,43 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PerfilAlumn.aspx.cs" Inherits="FG.Aspx.PerfilAlumn" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PerfilAlumn.aspx.cs" Inherits="FG.Aspx.PerfilAlumn1" %>
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My First Game - Plataforma Educativa</title>
-    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    <!-- Bootstrap 3.3.2 -->
-    <link href="../Content/css/PerfAl/css/bootstrap.min.css" rel="stylesheet" />
-    <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />   --> 
-    <!-- FontAwesome 4.3.0 -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!-- Ionicons 2.0.0 -->
-    <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />    
-    <!-- Theme style -->
-<link href="../Content/css/PerfAl/dist/AdminLTE.min.css" rel="stylesheet" />
-    <!--<link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
-    <!-- AdminLTE Skins. Choose a skin from the css/skins 
-         folder instead of downloading all of them to reduce the load. -->
-<link href="../Content/css/PerfAl/dist/skins/_all-skins.min.css" rel="stylesheet" />
-<!--    <link href="dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
-    <!-- iCheck -->
-<link href="../Content/css/PerfAl/Plugin/iCheck/blue.css" rel="stylesheet" />
-    <!--<link href="plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css" />
-    <!-- Morris chart -->
-<link href="../Content/css/PerfAl/Plugin/Morris/morris.css" rel="stylesheet" />
-    <!--<link href="plugins/morris/morris.css" rel="stylesheet" type="text/css" />
-    <!-- jvectormap -->
-<link href="../Content/css/PerfAl/Plugin/jvector/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
-    <!--<link href="plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
-    <!-- Date Picker -->
-<link href="../Content/css/PerfAl/Plugin/datepicker/datepicker3.css" rel="stylesheet" />
-    <!--<link href="plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Perfil Alumno - My First Game</title>
+  <!-- Bootstrap core CSS-->
+<link href="../Content/css/PerfDoc/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom fonts for this template-->
+<link href="../Content/css/PerfDoc/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Page level plugin CSS-->
+<link href="../Content/css/PerfDoc/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet" />
+  <!-- Custom styles for this template-->
+<link href="../Content/css/PerfDoc/css/sb-admin.css" rel="stylesheet" />
+
+  <!--  //Panel-->
+<link href="../Content/css/PerfAl/css/img.css" rel="stylesheet" />
+
     <!-- Daterange picker -->
 <link href="../Content/css/PerfAl/Plugin/dateranger/daterangepicker-bs3.css" rel="stylesheet" />
-   <!-- <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+
     <!-- bootstrap wysihtml5 - text editor -->
 <link href="../Content/css/PerfAl/Plugin/boostrap/bootstrap3-wysihtml5.min.css" rel="stylesheet" />
-    <!--<link href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />-->
+ 
+    <!-- SubMenu -->
 
-      <!-- SubMenu -->
-
-           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="../Content/css/SubMenuCursos/submeny.css" rel="stylesheet" />
     <link href="../Content/css/SubMenuCursos/cs1.css" rel="stylesheet" />
+
+    <!--panel-->
+
+    <!--Curso-->
+    <link href="../Content/css/SubMenuCursos/submeny.css" rel="stylesheet" />
+     <link href="../Content/css/SubMenuCursos/cs1.css" rel="stylesheet" />
     <script type="text/javascript">
         function crecer(x) {
             x.style.width = "36%";
@@ -63,14 +55,8 @@
             x.style.width = "35%";
         }
     </script>
-      
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-      <style type="text/css">
+
+    <style type="text/css">
           .auto-style3 {
               width: 86%;
               margin-top:240px;
@@ -82,482 +68,136 @@
               height: 506px;
           }
           .auto-style4 {
-              margin-top: -149%;
-              width: 108%;
-              height: 0px;
+              /*margin-top: -149%;*/
+              width: 100px;
+              height: 100px;
+              margin-left:400px;
+              margin-top:-300px;
+
           }
       </style>
-  </head>
-  <body class="skin-blue">
-    <div class="wrapper">
-      
-      <header class="main-header">
-        <!-- Logo -->
-        <a href="#" class="logo"><b>Perfil: </b></a>
-        <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top" role="navigation">
-          <!-- Sidebar toggle button-->
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-            <span class="sr-only">Toggle navigation</span>
-          </a>
-          <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav">
-              <!-- Messages: style can be found in dropdown.less-->
-              <li class="dropdown messages-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-envelope-o"></i>
-                  <span class="label label-success">4</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 4 messages</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li><!-- start message -->
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
-                          </div>
-                          <h4>
-                            Support Team
-                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li><!-- end message -->
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
-                          </div>
-                          <h4>
-                            AdminLTE Design Team
-                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
-                          </div>
-                          <h4>
-                            Developers
-                            <small><i class="fa fa-clock-o"></i> Today</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
-                          </div>
-                          <h4>
-                            Sales Department
-                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
-                          </div>
-                          <h4>
-                            Reviewers
-                            <small><i class="fa fa-clock-o"></i> 2 days</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">See All Messages</a></li>
-                </ul>
-              </li>
-              <!-- Notifications: style can be found in dropdown.less -->
-              <li class="dropdown notifications-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-bell-o"></i>
-                  <span class="label label-warning">10</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 10 notifications</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-red"></i> 5 new members joined
-                        </a>
-                      </li>
-                        
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-user text-red"></i> You changed your username
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">View all</a></li>
-                </ul>
-              </li>
-              <!-- Tasks: style can be found in dropdown.less -->
-              <li class="dropdown tasks-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-flag-o"></i>
-                  <span class="label label-danger">9</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 9 tasks</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Design some buttons
-                            <small class="pull-right">20%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">20% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Create a nice theme
-                            <small class="pull-right">40%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">40% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Some task I need to do
-                            <small class="pull-right">60%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">60% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Make beautiful transitions
-                            <small class="pull-right">80%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">80% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                    </ul>
-                  </li>
-                  <li class="footer">
-                    <a href="#">View all tasks</a>
-                  </li>
-                </ul>
-              </li>
-              <!-- User Account: style can be found in dropdown.less -->
-              <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="../Imagenes/RedAnimationLoop.gif" class="user-image" alt="User Image"/>
-                    
-                  <span class="hidden-xs">Alexander Pierce</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <!-- User image -->
-                  <li class="user-header">
-                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
-                    <p>
-                      Alexander Pierce - Web Developer
-                      <small>Member since Nov. 2012</small>
-                    </p>
-                  </li>
-                  <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
-                  </li>
-                  <!-- Menu Footer-->
-                  <li class="user-footer">
-                    <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
-                    </div>
-                    <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header></div>
-      <!-- Left side column. contains the logo and sidebar -->
-      <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
-          <!-- Sidebar user panel -->
-          <div class="user-panel">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="PerfilAlumn.aspx">My First Game</a>     <h4 class="navbar-brand">Usuario Estudiante</h4>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+     <div class="navbar-nav navbar-sidenav" id="exampleAccordion">
+          
             <div class="pull-left image">
-                <img src="../Imagenes/RedAnimationLoop.gif" class="img-circle" alt="User Image"  />
+                <img src="../Imagenes/RedAnimationLoop.gif" class="img-circle" alt="User Image" style="width:55px;margin-left:15px" />
               
             </div>
             <div class="pull-left info">
-              <p>Nombre: </p>
+              <p style="color:white; margin-left:30px">Nombre:&nbsp; <asp:Label ID="nombreu" runat="server" Text="" style="color:white"></asp:Label></p>
 
-              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+              <a href="#"><i class="fa fa-circle text-success" style="margin-left:78px"></i> Online</a>
             </div>
+          
+          <div class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-dashboard"></i>
+
+            <span class="nav-link-text">Cursos</span>
+          </a>
+           <ul class="sidenav-second-level collapse" id="collapseMulti">
+            <li>
+              <a href="CursoLenguaje.aspx">Lenguaje</a>
+            </li>
+            <li>
+              <a href="CursoMatematica.aspx">Matemática</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
+           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text">Mis Resultados </span>
+          </a>
+           <%--  <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a href="#">Tutoriales Lenguaje</a>
+            </li>
+            <li>
+              <a href="#">Tutoriales Matemática</a>
+            </li>
+          </ul>--%>
+        </div>
+      </div>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="messagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-envelope"></i>
+            <span class="d-lg-none">Messages
+              <span class="badge badge-pill badge-primary">12 New</span>
+            </span>
+            <span class="indicator text-primary d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="messagesDropdown">
+            <h6 class="dropdown-header">No hay Mensajes</h6>
+        
           </div>
-          <!-- search form -->
-          <form action="#" method="get" class="sidebar-form">
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-bell"></i>
+            <span class="d-lg-none">Alertas
+              <span class="badge badge-pill badge-warning">6 New</span>
+            </span>
+            <span class="indicator text-warning d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i>
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+            <h6 class="dropdown-header">No hay alertas</h6>
+    
+          </div>
+        </li>
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0 mr-lg-2">
             <div class="input-group">
-              <input type="text" name="q" class="form-control" placeholder="Search..."/>
-              <span class="input-group-btn">
-                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+              <input class="form-control" type="text" placeholder="Search for...">
+              <span class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
               </span>
             </div>
           </form>
-          <!-- /.search form -->
-          <!-- sidebar menu: : style can be found in sidebar.less -->
-          <ul class="sidebar-menu">
-            <li class="header">Navegacion Principal</li>
-            <li class="active treeview">
-              <a href="#">
-                <i class="fa fa-dashboard"></i> <span>Mis Cursos</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li class="active"><a href="lenguaje.aspx"><i class="fa fa-circle-o"></i> Lenguaje</a></li>
-                <li><a href="mate.aspx"><i class="fa fa-circle-o"></i> Matemática</a></li>
-              </ul>
-            </li>
-         <!--   <li class="treeview">
-              <a href="#">
-                <i class="fa fa-files-o"></i>
-                <span>Layout Options</span>
-                <span class="label label-primary pull-right">4</span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="pages/widgets.html">
-                <i class="fa fa-th"></i> <span>Widgets</span> <small class="label pull-right bg-green">new</small>
-              </a>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-pie-chart"></i>
-                <span>Charts</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-                <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-laptop"></i>
-                <span>UI Elements</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-                <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-                <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-                <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-                <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-                <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-edit"></i> <span>Forms</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-                <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-                <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-table"></i> <span>Tables</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-                <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="pages/calendar.html">
-                <i class="fa fa-calendar"></i> <span>Calendar</span>
-                <small class="label pull-right bg-red">3</small>
-              </a>
-            </li>
-            <li>
-              <a href="pages/mailbox/mailbox.html">
-                <i class="fa fa-envelope"></i> <span>Mailbox</span>
-                <small class="label pull-right bg-yellow">12</small>
-              </a>
-            </li>       -->
-      <!--      <li class="treeview">
-              <a href="#">
-                <i class="fa fa-folder"></i> <span>Examples</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-                <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-                <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-                <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-                <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-                <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-                <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-              </ul>
-            </li>
-          <!--  <li class="treeview">
-              <a href="#">
-                <i class="fa fa-share"></i> <span>Multilevel</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                <li>
-                  <a href="#"><i class="fa fa-circle-o"></i> Level One <i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                    <li>
-                      <a href="#"><i class="fa fa-circle-o"></i> Level Two <i class="fa fa-angle-left pull-right"></i></a>
-                      <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li> 
-                <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-              </ul>
-            </li>       -->
-            <li><a href="documentation/index.html"><i class="fa fa-book"></i> Mis Resultados Obtenidos</a></li>
-          <!--  <li class="header">LABELS</li>
-            <li><a href="#"><i class="fa fa-circle-o text-danger"></i> Important</a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-warning"></i> Warning</a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-info"></i> Information</a></li> -->
-          </ul> 
-        </section>
-        <!-- /.sidebar -->
-      </aside>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Cerra sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="PerfilAlumn.aspx">Inicio</a>
+        </li>
+        <li class="breadcrumb-item active">Mi Perfil</li>
+      </ol></div>
 
-      <!-- Right side column. Contains the navbar and content of the page -->
-      <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-          <h1>
-              Menú
-            <small>Control panel</small>
-          </h1>
-          <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
-            <li class="active">Menú de Opciones</li>
-          </ol>
-        </section>
-          
-        <!-- Main content -->
-  <!--  <section class="content">
-          <!-- Small boxes (Stat box) -->
-  <!--      <div class="row">
-            <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-   <!--        <div class="small-box bg-aqua">
-                <div class="inner">
-                  <h3>150</h3>
-                  <p>New Orders</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-bag"></i>
-                </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
-            </div><!-- ./col -->
- <!--           <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
- <!--             <div class="small-box bg-green">
-                <div class="inner">
-                  <h3>53<sup style="font-size: 20px">%</sup></h3>
-                  <p>Bounce Rate</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-stats-bars"></i>
-                </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
-            </div><!-- ./col -->
-  <!--          <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-    <!--          <div class="small-box bg-yellow">
-                <div class="inner">
-                  <h3>44</h3>
-                  <p>User Registrations</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-person-add"></i>
-                </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
-            </div><!-- ./col -->
-       <!--    <div class="auto-style1">
-      <!--     <div class="container">-->
-
-              <div onload=" document.getElementById('navbar').style.display = 'none';" style="background-image:url('/Imagenes/giphys.gif'); background-color:#ffffff" id="imgpor" class="imgpor"><!--class="auto-style2"--> 
+            <div onload=" document.getElementById('navbar').style.display = 'none';" style="background-image:url('/Imagenes/giphys.gif'); background-color:#ffffff" id="imgpor" class="imgpor"><!--class="auto-style2"--> 
     
                <div  class="auto-style3" id="container " >
 
@@ -572,470 +212,921 @@
                </div>
 
            <div id="imgcenter" class="imgcenter">
-            <img src="../Imagenes/PiggygifWeb.gif " id="imgmed" class="auto-style4" />
-      </div>
-    </div>
+            &nbsp;</div>
+            <img src="../Imagenes/PiggygifWeb.gif " id="imgmed" class="auto-style4" /></div>
 
     <div style="background-color:darkslategray; margin-top:30px" ><br />
      </div>
 <!-- </div> -->
            
             </div>
-              <!-- small box -->
-    <!--          <div class="small-box bg-red">
-                <div class="inner">
-                  <h3>65</h3>
-                  <p>Unique Visitors</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-pie-graph"></i>
-                </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+      <!-- Icon Cards-->
+    <%--  <div class="row">
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-comments"></i>
               </div>
-            </div><!-- ./col -->
- <!--         </div><!-- /.row -->
-          <!-- Main row -->
-<!--          <div class="row">
-            <!-- Left col -->
-<!--            <section class="col-lg-7 connectedSortable">
-              <!-- Custom tabs (Charts with tabs)-->
-    <!--          <div class="nav-tabs-custom">
-                <!-- Tabs within a box -->
-    <!--            <ul class="nav nav-tabs pull-right">
-                  <li class="active"><a href="#revenue-chart" data-toggle="tab">Area</a></li>
-                  <li><a href="#sales-chart" data-toggle="tab">Donut</a></li>
-                  <li class="pull-left header"><i class="fa fa-inbox"></i> Sales</li>
-                </ul>
-                <div class="tab-content no-padding">
-                  <!-- Morris chart - Sales -->
-   <!--               <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 300px;"></div>
-                  <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;"></div>
+              <div class="mr-5">26 New Messages!</div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="#">
+              <span class="float-left">View Details</span>
+              <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-warning o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-list"></i>
+              </div>
+              <div class="mr-5">11 New Tasks!</div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="#">
+              <span class="float-left">View Details</span>
+              <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-success o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-shopping-cart"></i>
+              </div>
+              <div class="mr-5">123 New Orders!</div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="#">
+              <span class="float-left">View Details</span>
+              <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+          <div class="card text-white bg-danger o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-support"></i>
+              </div>
+              <div class="mr-5">13 New Tickets!</div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="#">
+              <span class="float-left">View Details</span>
+              <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Area Chart Example-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-area-chart"></i> Area Chart Example</div>
+        <div class="card-body">
+          <canvas id="myAreaChart" width="100%" height="30"></canvas>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <!-- Example Bar Chart Card-->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fa fa-bar-chart"></i> Bar Chart Example</div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-8 my-auto">
+                  <canvas id="myBarChart" width="100" height="50"></canvas>
                 </div>
-              </div><!-- /.nav-tabs-custom -->
-
-              <!-- Chat box -->
-  <!--            <div class="box box-success">
-                <div class="box-header">
-                  <i class="fa fa-comments-o"></i>
-                  <h3 class="box-title">Chat</h3>
-                  <div class="box-tools pull-right" data-toggle="tooltip" title="Status">
-                    <div class="btn-group" data-toggle="btn-toggle" >
-                      <button type="button" class="btn btn-default btn-sm active"><i class="fa fa-square text-green"></i></button>
-                      <button type="button" class="btn btn-default btn-sm"><i class="fa fa-square text-red"></i></button>
-                    </div>
-                  </div>
+                <div class="col-sm-4 text-center my-auto">
+                  <div class="h4 mb-0 text-primary">$34,693</div>
+                  <div class="small text-muted">YTD Revenue</div>
+                  <hr>
+                  <div class="h4 mb-0 text-warning">$18,474</div>
+                  <div class="small text-muted">YTD Expenses</div>
+                  <hr>
+                  <div class="h4 mb-0 text-success">$16,219</div>
+                  <div class="small text-muted">YTD Margin</div>
                 </div>
-                <div class="box-body chat" id="chat-box">
-                  <!-- chat item -->
-   <!--               <div class="item">
-                    <img src="dist/img/user4-128x128.jpg" alt="user image" class="online"/>
-                    <p class="message">
-                      <a href="#" class="name">
-                        <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
-                        Mike Doe
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>--%>
+          <!-- Card Columns Example Social Feed-->
+        <%--  <div class="mb-0 mt-4">
+            <i class="fa fa-newspaper-o"></i> News Feed</div>
+          <hr class="mt-2">
+          <div class="card-columns">
+            <!-- Example Social Card-->
+            <div class="card mb-3">
+              <a href="#">
+                <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=610" alt="">
+              </a>
+              <div class="card-body">
+                <h6 class="card-title mb-1"><a href="#">David Miller</a></h6>
+                <p class="card-text small">These waves are looking pretty good today!
+                  <a href="#">#surfsup</a>
+                </p>
+              </div>
+              <hr class="my-0">
+              <div class="card-body py-2 small">
+                <a class="mr-3 d-inline-block" href="#">
+                  <i class="fa fa-fw fa-thumbs-up"></i>Like</a>
+                <a class="mr-3 d-inline-block" href="#">
+                  <i class="fa fa-fw fa-comment"></i>Comment</a>
+                <a class="d-inline-block" href="#">
+                  <i class="fa fa-fw fa-share"></i>Share</a>
+              </div>
+              <hr class="my-0">
+              <div class="card-body small bg-faded">
+                <div class="media">
+                  <img class="d-flex mr-3" src="http://placehold.it/45x45" alt="">
+                  <div class="media-body">
+                    <h6 class="mt-0 mb-1"><a href="#">John Smith</a></h6>Very nice! I wish I was there! That looks amazing!
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item">
+                        <a href="#">Like</a>
+                      </li>
+                      <li class="list-inline-item">·</li>
+                      <li class="list-inline-item">
+                        <a href="#">Reply</a>
+                      </li>
+                    </ul>
+                    <div class="media mt-3">
+                      <a class="d-flex pr-3" href="#">
+                        <img src="http://placehold.it/45x45" alt="">
                       </a>
-                      I would like to meet you to discuss the latest news about
-                      the arrival of the new theme. They say it is going to be one the
-                      best themes on the market
-                    </p>
-                    <div class="attachment">
-                      <h4>Attachments:</h4>
-                      <p class="filename">
-                        Theme-thumbnail-image.jpg
-                      </p>
-                      <div class="pull-right">
-                        <button class="btn btn-primary btn-sm btn-flat">Open</button>
+                      <div class="media-body">
+                        <h6 class="mt-0 mb-1"><a href="#">David Miller</a></h6>Next time for sure!
+                        <ul class="list-inline mb-0">
+                          <li class="list-inline-item">
+                            <a href="#">Like</a>
+                          </li>
+                          <li class="list-inline-item">·</li>
+                          <li class="list-inline-item">
+                            <a href="#">Reply</a>
+                          </li>
+                        </ul>
                       </div>
-                    </div><!-- /.attachment -->
-           <!--       </div><!-- /.item -->
-                  <!-- chat item -->
-   <!--               <div class="item">
-                    <img src="dist/img/user3-128x128.jpg" alt="user image" class="offline"/>
-                    <p class="message">
-                      <a href="#" class="name">
-                        <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
-                        Alexander Pierce
-                      </a>
-                      I would like to meet you to discuss the latest news about
-                      the arrival of the new theme. They say it is going to be one the
-                      best themes on the market
-                    </p>
-                  </div><!-- /.item -->
-                  <!-- chat item -->
-    <!--              <div class="item">
-                    <img src="dist/img/user2-160x160.jpg" alt="user image" class="offline"/>
-                    <p class="message">
-                      <a href="#" class="name">
-                        <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
-                        Susan Doe
-                      </a>
-                      I would like to meet you to discuss the latest news about
-                      the arrival of the new theme. They say it is going to be one the
-                      best themes on the market
-                    </p>
-                  </div><!-- /.item -->
-    <!--            </div><!-- /.chat -->
-    <!--            <div class="box-footer">
-                  <div class="input-group">
-                    <input class="form-control" placeholder="Type message..."/>
-                    <div class="input-group-btn">
-                      <button class="btn btn-success"><i class="fa fa-plus"></i></button>
                     </div>
                   </div>
                 </div>
-              </div><!-- /.box (chat box) -->
-
-              <!-- TO DO List -->
-    <!--          <div class="box box-primary">
-                <div class="box-header">
-                  <i class="ion ion-clipboard"></i>
-                  <h3 class="box-title">To Do List</h3>
-                  <div class="box-tools pull-right">
-                    <ul class="pagination pagination-sm inline">
-                      <li><a href="#">&laquo;</a></li>
-                      <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">&raquo;</a></li>
+              </div>
+              <div class="card-footer small text-muted">Posted 32 mins ago</div>
+            </div>
+            <!-- Example Social Card-->
+            <div class="card mb-3">
+              <a href="#">
+                <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=180" alt="">
+              </a>
+              <div class="card-body">
+                <h6 class="card-title mb-1"><a href="#">John Smith</a></h6>
+                <p class="card-text small">Another day at the office...
+                  <a href="#">#workinghardorhardlyworking</a>
+                </p>
+              </div>
+              <hr class="my-0">
+              <div class="card-body py-2 small">
+                <a class="mr-3 d-inline-block" href="#">
+                  <i class="fa fa-fw fa-thumbs-up"></i>Like</a>
+                <a class="mr-3 d-inline-block" href="#">
+                  <i class="fa fa-fw fa-comment"></i>Comment</a>
+                <a class="d-inline-block" href="#">
+                  <i class="fa fa-fw fa-share"></i>Share</a>
+              </div>
+              <hr class="my-0">
+              <div class="card-body small bg-faded">
+                <div class="media">
+                  <img class="d-flex mr-3" src="http://placehold.it/45x45" alt="">
+                  <div class="media-body">
+                    <h6 class="mt-0 mb-1"><a href="#">Jessy Lucas</a></h6>Where did you get that camera?! I want one!
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item">
+                        <a href="#">Like</a>
+                      </li>
+                      <li class="list-inline-item">·</li>
+                      <li class="list-inline-item">
+                        <a href="#">Reply</a>
+                      </li>
                     </ul>
                   </div>
-                </div><!-- /.box-header -->
-   <!--             <div class="box-body">
-                  <ul class="todo-list">
-                    <li>
-                      <!-- drag handle -->
-     <!--                 <span class="handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                      <!-- checkbox -->
-   <!--                   <input type="checkbox" value="" name=""/>
-                      <!-- todo text -->
-    <!--                  <span class="text">Design a nice theme</span>
-                      <!-- Emphasis label -->
-   <!--                   <small class="label label-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
-                      <!-- General tools such as edit or delete-->
-  <!--                    <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                      <input type="checkbox" value="" name=""/>
-                      <span class="text">Make the theme responsive</span>
-                      <small class="label label-info"><i class="fa fa-clock-o"></i> 4 hours</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                      <input type="checkbox" value="" name=""/>
-                      <span class="text">Let theme shine like a star</span>
-                      <small class="label label-warning"><i class="fa fa-clock-o"></i> 1 day</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                      <input type="checkbox" value="" name=""/>
-                      <span class="text">Let theme shine like a star</span>
-                      <small class="label label-success"><i class="fa fa-clock-o"></i> 3 days</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                      <input type="checkbox" value="" name=""/>
-                      <span class="text">Check your messages and notifications</span>
-                      <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 week</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                      <span class="handle">
-                        <i class="fa fa-ellipsis-v"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                      </span>
-                      <input type="checkbox" value="" name=""/>
-                      <span class="text">Let theme shine like a star</span>
-                      <small class="label label-default"><i class="fa fa-clock-o"></i> 1 month</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                  </ul>
-                </div><!-- /.box-body -->
-     <!--           <div class="box-footer clearfix no-border">
-                  <button class="btn btn-default pull-right"><i class="fa fa-plus"></i> Add item</button>
-                </div>
-              </div><!-- /.box -->
-
-              <!-- quick email widget -->
-    <!--          <div class="box box-info">
-                <div class="box-header">
-                  <i class="fa fa-envelope"></i>
-                  <h3 class="box-title">Quick Email</h3>
-                  <!-- tools box -->
-  <!--                <div class="pull-right box-tools">
-                    <button class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
-                  </div><!-- /. tools -->
-    <!--            </div>
-                <div class="box-body">
-                  <form action="#" method="post">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="emailto" placeholder="Email to:"/>
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" placeholder="Subject"/>
-                    </div>
-                    <div>
-                      <textarea class="textarea" placeholder="Message" style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                    </div>
-                  </form>
-                </div>
-                <div class="box-footer clearfix">
-                  <button class="pull-right btn btn-default" id="sendEmail">Send <i class="fa fa-arrow-circle-right"></i></button>
                 </div>
               </div>
-
-            </section><!-- /.Left col -->
-            <!-- right col (We are only adding the ID to make the widgets sortable)-->
- <!--           <section class="col-lg-5 connectedSortable">                                -->
-
-              <!-- Map box -->
-     <!--         <div class="box box-solid bg-light-blue-gradient">
-                <div class="box-header">
-                  <!-- tools box -->
- <!--                 <div class="pull-right box-tools">
-                    <button class="btn btn-primary btn-sm daterange pull-right" data-toggle="tooltip" title="Date range"><i class="fa fa-calendar"></i></button>
-                    <button class="btn btn-primary btn-sm pull-right" data-widget='collapse' data-toggle="tooltip" title="Collapse" style="margin-right: 5px;"><i class="fa fa-minus"></i></button>
-                  </div><!-- /. tools -->
-
-    <!--              <i class="fa fa-map-marker"></i>
-                  <h3 class="box-title">
-                    Visitors
-                  </h3>
-                </div>
-                <div class="box-body">
-                  <div id="world-map" style="height: 250px; width: 100%;"></div>
-                </div><!-- /.box-body-->
-    <!--            <div class="box-footer no-border">
-                  <div class="row">
-                    <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-                      <div id="sparkline-1"></div>
-                      <div class="knob-label">Visitors</div>
-                    </div><!-- ./col -->
-    <!--                <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-                      <div id="sparkline-2"></div>
-                      <div class="knob-label">Online</div>
-                    </div><!-- ./col -->
-    <!--                <div class="col-xs-4 text-center">
-                      <div id="sparkline-3"></div>
-                      <div class="knob-label">Exists</div>
-                    </div><!-- ./col -->
- <!--                 </div><!-- /.row -->
- <!--               </div>
+              <div class="card-footer small text-muted">Posted 46 mins ago</div>
+            </div>--%>
+            <!-- Example Social Card-->
+          <%--  <div class="card mb-3">
+              <a href="#">
+                <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=281" alt="">
+              </a>
+              <div class="card-body">
+                <h6 class="card-title mb-1"><a href="#">Jeffery Wellings</a></h6>
+                <p class="card-text small">Nice shot from the skate park!
+                  <a href="#">#kickflip</a>
+                  <a href="#">#holdmybeer</a>
+                  <a href="#">#igotthis</a>
+                </p>
               </div>
-              <!-- /.box -->
-
-              <!-- solid sales graph -->
-   <!--           <div class="box box-solid bg-teal-gradient">
-                <div class="box-header">
-                  <i class="fa fa-th"></i>
-                  <h3 class="box-title">Sales Graph</h3>
-                  <div class="box-tools pull-right">
-                    <button class="btn bg-teal btn-sm" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button class="btn bg-teal btn-sm" data-widget="remove"><i class="fa fa-times"></i></button>
+              <hr class="my-0">
+              <div class="card-body py-2 small">
+                <a class="mr-3 d-inline-block" href="#">
+                  <i class="fa fa-fw fa-thumbs-up"></i>Like</a>
+                <a class="mr-3 d-inline-block" href="#">
+                  <i class="fa fa-fw fa-comment"></i>Comment</a>
+                <a class="d-inline-block" href="#">
+                  <i class="fa fa-fw fa-share"></i>Share</a>
+              </div>
+              <div class="card-footer small text-muted">Posted 1 hr ago</div>
+            </div>
+            <!-- Example Social Card-->
+            <div class="card mb-3">
+              <a href="#">
+                <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=185" alt="">
+              </a>
+              <div class="card-body">
+                <h6 class="card-title mb-1"><a href="#">David Miller</a></h6>
+                <p class="card-text small">It's hot, and I might be lost...
+                  <a href="#">#desert</a>
+                  <a href="#">#water</a>
+                  <a href="#">#anyonehavesomewater</a>
+                  <a href="#">#noreally</a>
+                  <a href="#">#thirsty</a>
+                  <a href="#">#dehydration</a>
+                </p>
+              </div>
+              <hr class="my-0">
+              <div class="card-body py-2 small">
+                <a class="mr-3 d-inline-block" href="#">
+                  <i class="fa fa-fw fa-thumbs-up"></i>Like</a>
+                <a class="mr-3 d-inline-block" href="#">
+                  <i class="fa fa-fw fa-comment"></i>Comment</a>
+                <a class="d-inline-block" href="#">
+                  <i class="fa fa-fw fa-share"></i>Share</a>
+              </div>
+              <hr class="my-0">
+              <div class="card-body small bg-faded">
+                <div class="media">
+                  <img class="d-flex mr-3" src="http://placehold.it/45x45" alt="">
+                  <div class="media-body">
+                    <h6 class="mt-0 mb-1"><a href="#">John Smith</a></h6>The oasis is a mile that way, or is that just a mirage?
+                    <ul class="list-inline mb-0">
+                      <li class="list-inline-item">
+                        <a href="#">Like</a>
+                      </li>
+                      <li class="list-inline-item">·</li>
+                      <li class="list-inline-item">
+                        <a href="#">Reply</a>
+                      </li>
+                    </ul>
+                    <div class="media mt-3">
+                      <a class="d-flex pr-3" href="#">
+                        <img src="http://placehold.it/45x45" alt="">
+                      </a>
+                      <div class="media-body">
+                        <h6 class="mt-0 mb-1"><a href="#">David Miller</a></h6>
+                        <img class="img-fluid w-100 mb-1" src="https://unsplash.it/700/450?image=789" alt="">I'm saved, I found a cactus. How do I open this thing?
+                        <ul class="list-inline mb-0">
+                          <li class="list-inline-item">
+                            <a href="#">Like</a>
+                          </li>
+                          <li class="list-inline-item">·</li>
+                          <li class="list-inline-item">
+                            <a href="#">Reply</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="box-body border-radius-none">
-                  <div class="chart" id="line-chart" style="height: 250px;"></div>
-                </div><!-- /.box-body -->
- <!--               <div class="box-footer no-border">
-                  <div class="row">
-                    <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-                      <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60" data-fgColor="#39CCCC"/>
-                      <div class="knob-label">Mail-Orders</div>
-                    </div><!-- ./col -->
-    <!--                <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-                      <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60" data-fgColor="#39CCCC"/>
-                      <div class="knob-label">Online</div>
-                    </div><!-- ./col -->
-   <!--                 <div class="col-xs-4 text-center">
-                      <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60" data-fgColor="#39CCCC"/>
-                      <div class="knob-label">In-Store</div>
-                    </div><!-- ./col -->
-   <!--               </div><!-- /.row -->
-    <!--            </div><!-- /.box-footer -->
-    <!--          </div><!-- /.box -->
-
-              <!-- Calendar -->
-  <!--            <div class="box box-solid bg-green-gradient">
-                <div class="box-header">
-                  <i class="fa fa-calendar"></i>
-                  <h3 class="box-title">Calendar</h3>
-                  <!-- tools box -->
-   <!--               <div class="pull-right box-tools">
-                    <!-- button with a dropdown -->
-   <!--                 <div class="btn-group">
-                      <button class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
-                      <ul class="dropdown-menu pull-right" role="menu">
-                        <li><a href="#">Add new event</a></li>
-                        <li><a href="#">Clear events</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">View calendar</a></li>
-                      </ul>
-                    </div>
-                    <button class="btn btn-success btn-sm" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button class="btn btn-success btn-sm" data-widget="remove"><i class="fa fa-times"></i></button>
-                  </div><!-- /. tools -->
-   <!--             </div><!-- /.box-header -->
-   <!--             <div class="box-body no-padding">
-                  <!--The calendar -->
-   <!--               <div id="calendar" style="width: 100%"></div>
-                </div><!-- /.box-body -->
-   <!--             <div class="box-footer text-black">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <!-- Progress bars -->
-   <!--                   <div class="clearfix">
-                        <span class="pull-left">Task #1</span>
-                        <small class="pull-right">90%</small>
-                      </div>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 90%;"></div>
-                      </div>
-
-                      <div class="clearfix">
-                        <span class="pull-left">Task #2</span>
-                        <small class="pull-right">70%</small>
-                      </div>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 70%;"></div>
-                      </div>
-                    </div><!-- /.col -->
-    <!--                <div class="col-sm-6">
-                      <div class="clearfix">
-                        <span class="pull-left">Task #3</span>
-                        <small class="pull-right">60%</small>
-                      </div>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 60%;"></div>
-                      </div>
-
-                      <div class="clearfix">
-                        <span class="pull-left">Task #4</span>
-                        <small class="pull-right">40%</small>
-                      </div>
-                      <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 40%;"></div>
-                      </div>
-                    </div><!-- /.col -->
-    <!--              </div><!-- /.row -->
-    <!--            </div>
-              </div><!-- /.box -->
-
-     <!--       </section><!-- right col -->
-          </div><!-- /.row (main row) -->
-
-  <!--      </section><!-- /.content -->
-<!--      </div><!-- /.content-wrapper -->
-   <!--   <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-          <b>Version</b> 2.0
+              </div>
+              <div class="card-footer small text-muted">Posted yesterday</div>
+            </div>
+          </div>
+          <!-- /Card Columns-->
         </div>
-        <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
-      </footer>
-    </div><!-- ./wrapper -->          
+        <div class="col-lg-4">
+          <!-- Example Pie Chart Card-->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fa fa-pie-chart"></i> Pie Chart Example</div>
+            <div class="card-body">
+              <canvas id="myPieChart" width="100%" height="100"></canvas>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+          <!-- Example Notifications Card-->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fa fa-bell-o"></i> Feed Example</div>
+            <div class="list-group list-group-flush small">
+              <a class="list-group-item list-group-item-action" href="#">
+                <div class="media">
+                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                  <div class="media-body">
+                    <strong>David Miller</strong>posted a new article to
+                    <strong>David Miller Website</strong>.
+                    <div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
+                  </div>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action" href="#">
+                <div class="media">
+                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                  <div class="media-body">
+                    <strong>Samantha King</strong>sent you a new message!
+                    <div class="text-muted smaller">Today at 4:37 PM - 1hr ago</div>
+                  </div>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action" href="#">
+                <div class="media">
+                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                  <div class="media-body">
+                    <strong>Jeffery Wellings</strong>added a new photo to the album
+                    <strong>Beach</strong>.
+                    <div class="text-muted smaller">Today at 4:31 PM - 1hr ago</div>
+                  </div>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action" href="#">
+                <div class="media">
+                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                  <div class="media-body">
+                    <i class="fa fa-code-fork"></i>
+                    <strong>Monica Dennis</strong>forked the
+                    <strong>startbootstrap-sb-admin</strong>repository on
+                    <strong>GitHub</strong>.
+                    <div class="text-muted smaller">Today at 3:54 PM - 2hrs ago</div>
+                  </div>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action" href="#">View all activity...</a>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+        </div>
+      </div>
+      <!-- Example DataTables Card-->
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Data Table Example</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Office</th>
+                  <th>Age</th>
+                  <th>Start date</th>
+                  <th>Salary</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Office</th>
+                  <th>Age</th>
+                  <th>Start date</th>
+                  <th>Salary</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>Tiger Nixon</td>
+                  <td>System Architect</td>
+                  <td>Edinburgh</td>
+                  <td>61</td>
+                  <td>2011/04/25</td>
+                  <td>$320,800</td>
+                </tr>
+                <tr>
+                  <td>Garrett Winters</td>
+                  <td>Accountant</td>
+                  <td>Tokyo</td>
+                  <td>63</td>
+                  <td>2011/07/25</td>
+                  <td>$170,750</td>
+                </tr>
+                <tr>
+                  <td>Ashton Cox</td>
+                  <td>Junior Technical Author</td>
+                  <td>San Francisco</td>
+                  <td>66</td>
+                  <td>2009/01/12</td>
+                  <td>$86,000</td>
+                </tr>
+                <tr>
+                  <td>Cedric Kelly</td>
+                  <td>Senior Javascript Developer</td>
+                  <td>Edinburgh</td>
+                  <td>22</td>
+                  <td>2012/03/29</td>
+                  <td>$433,060</td>
+                </tr>
+                <tr>
+                  <td>Airi Satou</td>
+                  <td>Accountant</td>
+                  <td>Tokyo</td>
+                  <td>33</td>
+                  <td>2008/11/28</td>
+                  <td>$162,700</td>
+                </tr>
+                <tr>
+                  <td>Brielle Williamson</td>
+                  <td>Integration Specialist</td>
+                  <td>New York</td>
+                  <td>61</td>
+                  <td>2012/12/02</td>
+                  <td>$372,000</td>
+                </tr>
+                <tr>
+                  <td>Herrod Chandler</td>
+                  <td>Sales Assistant</td>
+                  <td>San Francisco</td>
+                  <td>59</td>
+                  <td>2012/08/06</td>
+                  <td>$137,500</td>
+                </tr>
+                <tr>
+                  <td>Rhona Davidson</td>
+                  <td>Integration Specialist</td>
+                  <td>Tokyo</td>
+                  <td>55</td>
+                  <td>2010/10/14</td>
+                  <td>$327,900</td>
+                </tr>
+                <tr>
+                  <td>Colleen Hurst</td>
+                  <td>Javascript Developer</td>
+                  <td>San Francisco</td>
+                  <td>39</td>
+                  <td>2009/09/15</td>
+                  <td>$205,500</td>
+                </tr>
+                <tr>
+                  <td>Sonya Frost</td>
+                  <td>Software Engineer</td>
+                  <td>Edinburgh</td>
+                  <td>23</td>
+                  <td>2008/12/13</td>
+                  <td>$103,600</td>
+                </tr>
+                <tr>
+                  <td>Jena Gaines</td>
+                  <td>Office Manager</td>
+                  <td>London</td>
+                  <td>30</td>
+                  <td>2008/12/19</td>
+                  <td>$90,560</td>
+                </tr>
+                <tr>
+                  <td>Quinn Flynn</td>
+                  <td>Support Lead</td>
+                  <td>Edinburgh</td>
+                  <td>22</td>
+                  <td>2013/03/03</td>
+                  <td>$342,000</td>
+                </tr>
+                <tr>
+                  <td>Charde Marshall</td>
+                  <td>Regional Director</td>
+                  <td>San Francisco</td>
+                  <td>36</td>
+                  <td>2008/10/16</td>
+                  <td>$470,600</td>
+                </tr>
+                <tr>
+                  <td>Haley Kennedy</td>
+                  <td>Senior Marketing Designer</td>
+                  <td>London</td>
+                  <td>43</td>
+                  <td>2012/12/18</td>
+                  <td>$313,500</td>
+                </tr>
+                <tr>
+                  <td>Tatyana Fitzpatrick</td>
+                  <td>Regional Director</td>
+                  <td>London</td>
+                  <td>19</td>
+                  <td>2010/03/17</td>
+                  <td>$385,750</td>
+                </tr>
+                <tr>
+                  <td>Michael Silva</td>
+                  <td>Marketing Designer</td>
+                  <td>London</td>
+                  <td>66</td>
+                  <td>2012/11/27</td>
+                  <td>$198,500</td>
+                </tr>
+                <tr>
+                  <td>Paul Byrd</td>
+                  <td>Chief Financial Officer (CFO)</td>
+                  <td>New York</td>
+                  <td>64</td>
+                  <td>2010/06/09</td>
+                  <td>$725,000</td>
+                </tr>
+                <tr>
+                  <td>Gloria Little</td>
+                  <td>Systems Administrator</td>
+                  <td>New York</td>
+                  <td>59</td>
+                  <td>2009/04/10</td>
+                  <td>$237,500</td>
+                </tr>
+                <tr>
+                  <td>Bradley Greer</td>
+                  <td>Software Engineer</td>
+                  <td>London</td>
+                  <td>41</td>
+                  <td>2012/10/13</td>
+                  <td>$132,000</td>
+                </tr>
+                <tr>
+                  <td>Dai Rios</td>
+                  <td>Personnel Lead</td>
+                  <td>Edinburgh</td>
+                  <td>35</td>
+                  <td>2012/09/26</td>
+                  <td>$217,500</td>
+                </tr>
+                <tr>
+                  <td>Jenette Caldwell</td>
+                  <td>Development Lead</td>
+                  <td>New York</td>
+                  <td>30</td>
+                  <td>2011/09/03</td>
+                  <td>$345,000</td>
+                </tr>
+                <tr>
+                  <td>Yuri Berry</td>
+                  <td>Chief Marketing Officer (CMO)</td>
+                  <td>New York</td>
+                  <td>40</td>
+                  <td>2009/06/25</td>
+                  <td>$675,000</td>
+                </tr>
+                <tr>
+                  <td>Caesar Vance</td>
+                  <td>Pre-Sales Support</td>
+                  <td>New York</td>
+                  <td>21</td>
+                  <td>2011/12/12</td>
+                  <td>$106,450</td>
+                </tr>
+                <tr>
+                  <td>Doris Wilder</td>
+                  <td>Sales Assistant</td>
+                  <td>Sidney</td>
+                  <td>23</td>
+                  <td>2010/09/20</td>
+                  <td>$85,600</td>
+                </tr>
+                <tr>
+                  <td>Angelica Ramos</td>
+                  <td>Chief Executive Officer (CEO)</td>
+                  <td>London</td>
+                  <td>47</td>
+                  <td>2009/10/09</td>
+                  <td>$1,200,000</td>
+                </tr>
+                <tr>
+                  <td>Gavin Joyce</td>
+                  <td>Developer</td>
+                  <td>Edinburgh</td>
+                  <td>42</td>
+                  <td>2010/12/22</td>
+                  <td>$92,575</td>
+                </tr>
+                <tr>
+                  <td>Jennifer Chang</td>
+                  <td>Regional Director</td>
+                  <td>Singapore</td>
+                  <td>28</td>
+                  <td>2010/11/14</td>
+                  <td>$357,650</td>
+                </tr>
+                <tr>
+                  <td>Brenden Wagner</td>
+                  <td>Software Engineer</td>
+                  <td>San Francisco</td>
+                  <td>28</td>
+                  <td>2011/06/07</td>
+                  <td>$206,850</td>
+                </tr>
+                <tr>
+                  <td>Fiona Green</td>
+                  <td>Chief Operating Officer (COO)</td>
+                  <td>San Francisco</td>
+                  <td>48</td>
+                  <td>2010/03/11</td>
+                  <td>$850,000</td>
+                </tr>
+                <tr>
+                  <td>Shou Itou</td>
+                  <td>Regional Marketing</td>
+                  <td>Tokyo</td>
+                  <td>20</td>
+                  <td>2011/08/14</td>
+                  <td>$163,000</td>
+                </tr>
+                <tr>
+                  <td>Michelle House</td>
+                  <td>Integration Specialist</td>
+                  <td>Sidney</td>
+                  <td>37</td>
+                  <td>2011/06/02</td>
+                  <td>$95,400</td>
+                </tr>
+                <tr>
+                  <td>Suki Burks</td>
+                  <td>Developer</td>
+                  <td>London</td>
+                  <td>53</td>
+                  <td>2009/10/22</td>
+                  <td>$114,500</td>
+                </tr>
+                <tr>
+                  <td>Prescott Bartlett</td>
+                  <td>Technical Author</td>
+                  <td>London</td>
+                  <td>27</td>
+                  <td>2011/05/07</td>
+                  <td>$145,000</td>
+                </tr>
+                <tr>
+                  <td>Gavin Cortez</td>
+                  <td>Team Leader</td>
+                  <td>San Francisco</td>
+                  <td>22</td>
+                  <td>2008/10/26</td>
+                  <td>$235,500</td>
+                </tr>
+                <tr>
+                  <td>Martena Mccray</td>
+                  <td>Post-Sales support</td>
+                  <td>Edinburgh</td>
+                  <td>46</td>
+                  <td>2011/03/09</td>
+                  <td>$324,050</td>
+                </tr>
+                <tr>
+                  <td>Unity Butler</td>
+                  <td>Marketing Designer</td>
+                  <td>San Francisco</td>
+                  <td>47</td>
+                  <td>2009/12/09</td>
+                  <td>$85,675</td>
+                </tr>
+                <tr>
+                  <td>Howard Hatfield</td>
+                  <td>Office Manager</td>
+                  <td>San Francisco</td>
+                  <td>51</td>
+                  <td>2008/12/16</td>
+                  <td>$164,500</td>
+                </tr>
+                <tr>
+                  <td>Hope Fuentes</td>
+                  <td>Secretary</td>
+                  <td>San Francisco</td>
+                  <td>41</td>
+                  <td>2010/02/12</td>
+                  <td>$109,850</td>
+                </tr>
+                <tr>
+                  <td>Vivian Harrell</td>
+                  <td>Financial Controller</td>
+                  <td>San Francisco</td>
+                  <td>62</td>
+                  <td>2009/02/14</td>
+                  <td>$452,500</td>
+                </tr>
+                <tr>
+                  <td>Timothy Mooney</td>
+                  <td>Office Manager</td>
+                  <td>London</td>
+                  <td>37</td>
+                  <td>2008/12/11</td>
+                  <td>$136,200</td>
+                </tr>
+                <tr>
+                  <td>Jackson Bradshaw</td>
+                  <td>Director</td>
+                  <td>New York</td>
+                  <td>65</td>
+                  <td>2008/09/26</td>
+                  <td>$645,750</td>
+                </tr>
+                <tr>
+                  <td>Olivia Liang</td>
+                  <td>Support Engineer</td>
+                  <td>Singapore</td>
+                  <td>64</td>
+                  <td>2011/02/03</td>
+                  <td>$234,500</td>
+                </tr>
+                <tr>
+                  <td>Bruno Nash</td>
+                  <td>Software Engineer</td>
+                  <td>London</td>
+                  <td>38</td>
+                  <td>2011/05/03</td>
+                  <td>$163,500</td>
+                </tr>
+                <tr>
+                  <td>Sakura Yamamoto</td>
+                  <td>Support Engineer</td>
+                  <td>Tokyo</td>
+                  <td>37</td>
+                  <td>2009/08/19</td>
+                  <td>$139,575</td>
+                </tr>
+                <tr>
+                  <td>Thor Walton</td>
+                  <td>Developer</td>
+                  <td>New York</td>
+                  <td>61</td>
+                  <td>2013/08/11</td>
+                  <td>$98,540</td>
+                </tr>
+                <tr>
+                  <td>Finn Camacho</td>
+                  <td>Support Engineer</td>
+                  <td>San Francisco</td>
+                  <td>47</td>
+                  <td>2009/07/07</td>
+                  <td>$87,500</td>
+                </tr>
+                <tr>
+                  <td>Serge Baldwin</td>
+                  <td>Data Coordinator</td>
+                  <td>Singapore</td>
+                  <td>64</td>
+                  <td>2012/04/09</td>
+                  <td>$138,575</td>
+                </tr>
+                <tr>
+                  <td>Zenaida Frank</td>
+                  <td>Software Engineer</td>
+                  <td>New York</td>
+                  <td>63</td>
+                  <td>2010/01/04</td>
+                  <td>$125,250</td>
+                </tr>
+                <tr>
+                  <td>Zorita Serrano</td>
+                  <td>Software Engineer</td>
+                  <td>San Francisco</td>
+                  <td>56</td>
+                  <td>2012/06/01</td>
+                  <td>$115,000</td>
+                </tr>
+                <tr>
+                  <td>Jennifer Acosta</td>
+                  <td>Junior Javascript Developer</td>
+                  <td>Edinburgh</td>
+                  <td>43</td>
+                  <td>2013/02/01</td>
+                  <td>$75,650</td>
+                </tr>
+                <tr>
+                  <td>Cara Stevens</td>
+                  <td>Sales Assistant</td>
+                  <td>New York</td>
+                  <td>46</td>
+                  <td>2011/12/06</td>
+                  <td>$145,600</td>
+                </tr>
+                <tr>
+                  <td>Hermione Butler</td>
+                  <td>Regional Director</td>
+                  <td>London</td>
+                  <td>47</td>
+                  <td>2011/03/21</td>
+                  <td>$356,250</td>
+                </tr>
+                <tr>
+                  <td>Lael Greer</td>
+                  <td>Systems Administrator</td>
+                  <td>London</td>
+                  <td>21</td>
+                  <td>2009/02/27</td>
+                  <td>$103,500</td>
+                </tr>
+                <tr>
+                  <td>Jonas Alexander</td>
+                  <td>Developer</td>
+                  <td>San Francisco</td>
+                  <td>30</td>
+                  <td>2010/07/14</td>
+                  <td>$86,500</td>
+                </tr>
+                <tr>
+                  <td>Shad Decker</td>
+                  <td>Regional Director</td>
+                  <td>Edinburgh</td>
+                  <td>51</td>
+                  <td>2008/11/13</td>
+                  <td>$183,000</td>
+                </tr>
+                <tr>
+                  <td>Michael Bruce</td>
+                  <td>Javascript Developer</td>
+                  <td>Singapore</td>
+                  <td>29</td>
+                  <td>2011/06/27</td>
+                  <td>$183,000</td>
+                </tr>
+                <tr>
+                  <td>Donna Snider</td>
+                  <td>Customer Support</td>
+                  <td>New York</td>
+                  <td>27</td>
+                  <td>2011/01/25</td>
+                  <td>$112,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Your Website 2018</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>--%>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesion</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">¿Esta seguro de cerrar sesión?</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+            <a class="btn btn-primary" href="login.aspx">Ok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JavaScript-->
+<script src="../Content/css/PerfDoc/vendor/jquery/jquery.min.js"></script>
+<script src="../Content/css/PerfDoc/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-     
-        
+    <!-- Core plugin JavaScript-->
+<script src="../Content/css/PerfDoc/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- jQuery 2.1.3 -->
-<script src="../Content/css/PerfAl/Plugin/jQuery/jQuery-2.1.3.min.js"></script>
-    <!--<script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>-->
-    <!-- jQuery UI 1.11.2 -->
-    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-      $.widget.bridge('uibutton', $.ui.button);
-    </script>
-    <!-- Bootstrap 3.3.2 JS -->
-<script src="../Content/css/PerfAl/js/bootstrap.min.js"></script>
-    <!--<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>    -->
-    <!-- Morris.js charts -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="../Content/css/PerfAl/Plugin/Morris/morris.min.js"></script>
-    <!--<script src="plugins/morris/morris.min.js" type="text/javascript"></script>-->
-    <!-- Sparkline -->
-<script src="../Content/css/PerfAl/Plugin/sparkline/jquery.sparkline.min.js"></script>
-    <!--<script src="plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>-->
-    <!-- jvectormap -->
-<script src="../Content/css/PerfAl/Plugin/jvector/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="../Content/css/PerfAl/Plugin/jvector/jquery-jvectormap-world-mill-en.js"></script>
-    <!--<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>-->
-    <!--<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>-->
-    <!-- jQuery Knob Chart -->
-<script src="../Content/css/PerfAl/Plugin/knob/jquery.knob.js"></script>
-    <!--<script src="plugins/knob/jquery.knob.js" type="text/javascript"></script>-->
-    <!-- daterangepicker -->
-<script src="../Content/css/PerfAl/Plugin/dateranger/daterangepicker.js"></script>
-    <!--<script src="plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>-->
-    <!-- datepicker -->
-<script src="../Content/css/PerfAl/Plugin/datepicker/bootstrap-datepicker.js"></script>
-    <!--<script src="plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>--
-    <!-- Bootstrap WYSIHTML5 -->
-<script src="../Content/css/PerfAl/Plugin/boostrap/bootstrap3-wysihtml5.all.min.js"></script>
-    <!--<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>-->
-    <!-- iCheck -->
-<script src="../Content/css/PerfAl/Plugin/iCheck/icheck.min.js"></script>
-    <!--<script src="plugins/iCheck/icheck.min.js" type="text/javascript"></script>-->
-    <!-- Slimscroll -->
-<script src="../Content/css/PerfAl/Plugin/slim/jquery.slimscroll.min.js"></script>
-   <!-- <script src="plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>-->
-    <!-- FastClick -->
-<script src="../Content/css/PerfAl/Plugin/fastclick/fastclick.min.js"></script>
-    <!--<script src='plugins/fastclick/fastclick.min.js'></script>-->
-    <!-- AdminLTE App -->
-<script src="../Content/css/PerfAl/dist/js/app.min.js"></script>
-    <!--<script src="dist/js/app.min.js" type="text/javascript"></script>-->
+    <!-- Page level plugin JavaScript-->
+<script src="../Content/css/PerfDoc/vendor/chart.js/Chart.min.js"></script>
+<script src="../Content/css/PerfDoc/vendor/datatables/jquery.dataTables.js"></script>
+<script src="../Content/css/PerfDoc/vendor/datatables/dataTables.bootstrap4.js"></script>
+ 
+    <!-- Custom scripts for all pages-->
+<script src="../Content/css/PerfDoc/js/sb-admin-charts.min.js"></script>
+    <script src="js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+<script src="../Content/css/PerfDoc/js/sb-admin-datatables.min.js"></script>
+<script src="../Content/css/PerfDoc/js/sb-admin-charts.min.js"></script>
+ 
+  </div>
+</body>
 
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="../Content/css/PerfAl/dist/js/pages/dashboard.js"></script>
-    <!--<script src="dist/js/pages/dashboard.js" type="text/javascript"></script>-->
-
-    <!-- AdminLTE for demo purposes -->
-<script src="../Content/css/PerfAl/dist/js/demo.js"></script>
-    <!--<script src="dist/js/demo.js" type="text/javascript"></script>-->
-
-    
-  </body>
-    
 </html>
 
-<!--<!DOCTYPE html>
+
+
+
+
+
+<%--<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -1048,4 +1139,4 @@
         </div>
     </form>
 </body>
-</html>-->
+</html>--%>

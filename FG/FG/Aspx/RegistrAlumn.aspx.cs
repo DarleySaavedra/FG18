@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using CONTENEDOR.Entidades;
+using FG.Dominio.Entidades;
 
 namespace FG.Aspx
 {
@@ -17,38 +18,47 @@ namespace FG.Aspx
 
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
+            String Mens = string.Empty;
+            String nombrecompleto = string.Empty;
+
             try
             {
-                var oBLAlumno = new Alumno();
-                oBLAlumno.NombreA1 = tbnombre.Text;
-                oBLAlumno.ApellidoA1 = tbapellido.Text;
-                oBLAlumno.EdadA1 = tbedad.Text;
+                var oBLPersona = new Persona();
+                oBLPersona.NombreA1 = tbnombre.Text;
+                oBLPersona.ApellidoA1 = tbapellido.Text;
+                oBLPersona.EdadA1 = tbedad.Text;
+                oBLPersona.Grado = dgrado.Text;
                 if (radiom.Checked)
                 {
-                    oBLAlumno.SexoA1 = "Masculino";
+                    oBLPersona.SexoA1 = "Masculino";
                 }
                 else
-                    oBLAlumno.SexoA1 = "Femenino";
+                    oBLPersona.SexoA1 = "Femenino";
 
-                oBLAlumno.Direccion1 = tbdire.Text;
-                oBLAlumno.DepartamentoA1 = ddepar.SelectedValue;
-                oBLAlumno.Telefono1 = tbtel.Text;
-                oBLAlumno.Colegio1 = tbcol.Text;
+                oBLPersona.Direccion1 = tbdire.Text;
+                oBLPersona.DepartamentoA1 = ddepar.SelectedValue;
+                oBLPersona.Telefono1 = tbtel.Text;
+                oBLPersona.Colegio1 = tbcol.Text;
+              
 
-                var resp = oBLAlumno.Registrar();
+                var resp = oBLPersona.Registrar();
 
                 if (resp == 1)
                 {
                     tbnombre.Text = "";
                     tbapellido.Text = "";
                     tbedad.Text = "";
+                    dgrado.SelectedValue= "--Seleccionar--";
                     radiom.Checked = false;
                     radiof.Checked = false;
                     tbdire.Text = "";
-                    ddepar.Text = "--Seleccionar--";
+                    ddepar.SelectedValue = "--Seleccionar--";
                     tbtel.Text = "";
                     tbcol.Text = "";
-                    lbregistro.Text = "Alumno registrado.";
+                   //Mens= lbregistro.Text = "Alumno registrado.";
+                    nombrecompleto = oBLPersona.NombreA1 +" "+oBLPersona.ApellidoA1;
+                    Page.Response.Redirect("Registrof.aspx?msg=" +nombrecompleto);
+                    //Page.Response.Redirect("PerfilAlumn.aspx?msg=" + nombrecompleto);
                 }
                 else
                     lbregistro.Text = "No se pudo registrarse.";
@@ -60,5 +70,6 @@ namespace FG.Aspx
                 lbregistro.Text=ex.Message;
             }
         }
+        
     }
 }

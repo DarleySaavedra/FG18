@@ -47,16 +47,17 @@
                  <asp:RequiredFieldValidator ID="vpass" runat="server" ControlToValidate="tbpass" Display="Dynamic" ErrorMessage="Clave Obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
                   <br />
              </div>
-           
+             <asp:Label ID="lrepor" runat="server" Text="" style="margin-left:130px" ForeColor="Red"></asp:Label>
           <div class="form-group">
-             <a href="Registrar.aspx" style="color:blue; margin-left:130px" >Crear una nueva cuenta</a>
+            
             <asp:Button ID="btingresar" runat="server" Text="INGRESAR" CssClass="form-control btn btn-primary" OnClick="btingresar_Click" />
-              <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MyFirstGameConnectionString %>" SelectCommand="ConsultarAlumno" SelectCommandType="StoredProcedure">
+            <a href="RegistrAlumn.aspx" style="color:blue; margin-left:130px" >Crear una nueva cuenta</a>
+              <%-- <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MyFirstGameConnectionString %>" SelectCommand="ConsultarAlumno" SelectCommandType="StoredProcedure">
                   <SelectParameters>
                       <asp:ControlParameter ControlID="tbusu" Name="usu" PropertyName="Text" Type="String" />
                       <asp:ControlParameter ControlID="tbusu" Name="pass" PropertyName="Text" Type="String" />
                   </SelectParameters>
-              </asp:SqlDataSource>
+              </asp:SqlDataSource>--%>
               </div>   
             
             </div>

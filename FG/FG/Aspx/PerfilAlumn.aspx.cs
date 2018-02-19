@@ -11,7 +11,14 @@ namespace FG.Aspx
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //    string[] list = mensaje.Split('|');
 
+            //    foreach (string item in list)
+            //    {
+            //        nombreu.Text = item + "";
+            //        nombreu1.Text = item + "";
+
+            //    }
         }
     }
 }

@@ -9,17 +9,15 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link href="../Content/css/RegisAlum/estilo2.css" rel="stylesheet" />
    
-    <!--Ventana Modal-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/> 
+    <!--Ventana Modal-->
+
+ <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     
-    <style type="text/css">
-        .auto-style1 {
-            height: 20px;
-        }
-    </style>
-</head>
+    </head>
+  
+
 <body style="margin-left:-30px; margin-top:-50px; background-image:url('/Imagenes/giphys.gif'); width: 1500px; height:800px">
 
       
@@ -30,10 +28,10 @@
              <strong>
             &nbsp;</strong></h2>
     
-    <div class="container well contenedor" style="margin-top:-55px">
+    <div class="container well contenedor" style="margin-top:-75px">
         <div class="row">
             <div class="col-xs-12">
-                <h2>Datos Personales</h2>
+                <%--<h2>Paso 1: Datos Personales</h2>--%>
             </div>
         </div>
         <form runat="server">
@@ -61,14 +59,30 @@
                 
             <asp:Label ID="Label4" runat="server" Text="Edad" CssClass="control-label col-sm-2"></asp:Label>
             <div class="col-sm-10" ">
-                  <asp:TextBox ID="tbedad" runat="server" CssClass="form-control"></asp:TextBox>
+                  <asp:TextBox ID="tbedad" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
                  <asp:RequiredFieldValidator ID="vedad" runat="server" ControlToValidate="tbedad" Display="Dynamic" ErrorMessage="Edad Obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
                   <br />
              </div>
 
          </div>
 
+                <div class="form-group">
+                    <asp:Label ID="Label5" runat="server" Text="Grado " CssClass="control-label col-sm-2"></asp:Label> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                    <asp:DropDownList ID="dgrado" runat="server">
+                        <asp:ListItem Value="-1">--Seleccionar--</asp:ListItem>
+                        <asp:ListItem Value="3 Grado">3 Grado</asp:ListItem>
+                        <asp:ListItem Value="4 Grado">4 Grado</asp:ListItem>
+                        <asp:ListItem Value="5 Grado">5 Grado</asp:ListItem>
+                        <asp:ListItem Value="6 Grado">6 Grado</asp:ListItem>
+                        
+                    </asp:DropDownList>
+                    <br />
+                </div>
+
+
          <div class="form-group">
+             <br />
              <asp:Label ID="label" runat="server" Text="Sexo" CssClass="control-label col-sm-2"></asp:Label>
              <div class="col-sm-10">
                   <asp:RadioButton ID="radiom" runat="server"  Text="Masculino" GroupName="grup1" />
@@ -80,7 +94,7 @@
          </div>
 
          <div class="form-group" style="margin-top:5px">
-                 <asp:Label ID="Label1" runat="server" Text="Direccion"  CssClass="control-label col-sm-2"></asp:Label>
+                 <asp:Label ID="Label1" runat="server" Text="Ciudad"  CssClass="control-label col-sm-2"></asp:Label>
                   <div class="col-sm-10">
                      <asp:TextBox ID="tbdire" runat="server" CssClass="form-control"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="vdir" runat="server" ControlToValidate="tbdire" Display="Dynamic" ErrorMessage="Direccion Obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -119,11 +133,12 @@
                         <asp:ListItem Value="Tumbes">Tumbes</asp:ListItem>
                         <asp:ListItem Value="Ucayali">Ucayali</asp:ListItem>
                     </asp:DropDownList>
+                    <br />
                 </div>
               <div class="form-group">
                  <asp:Label ID="Label2" runat="server" Text="Telefono"  CssClass="control-label col-sm-2"></asp:Label>
                   <div class="col-sm-10">
-                     <asp:TextBox ID="tbtel" runat="server" CssClass="form-control"></asp:TextBox>
+                     <asp:TextBox ID="tbtel" runat="server" CssClass="form-control" TextMode="Number"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="vtel" runat="server" ControlToValidate="tbtel" Display="Dynamic" ErrorMessage="Telefono Obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
                       <br />
                    </div></div>
@@ -135,45 +150,19 @@
                     <asp:RequiredFieldValidator ID="vcol" runat="server" ControlToValidate="tbcol" Display="Dynamic" ErrorMessage="Colegio Obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
                       <br />
                    </div>
-
+                 
                
                  </div>
             </div>
-
-                <asp:Label ID="lbregistro" runat="server" style="margin-left:170px" ForeColor="#003399"></asp:Label>
-           
+            <asp:Label ID="lbregistro" runat="server" style="margin-left:170px" ForeColor="#003399"></asp:Label>
+   
           <div class="form-group">
-              <asp:button runat="server" text="REGISTRAR" CssClass="form-control btn btn-primary" ID="bregistrar" OnClick="Unnamed1_Click" />
-
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-         
-            </div>
+           <asp:button runat="server" text="REGISTRAR" CssClass="form-control btn btn-primary" ID="bregistrar" OnClick="Unnamed1_Click"  />
+              </div>
   </form>
-    
-        
+     
 </div>
-   <!-- <img alt="" class="auto-style1" src="../img/pile_of_angry_birds_by_gav_imp-d4b2xol.png"  style="width:442px; margin-left:400px" />
-       -->
-    <img src="../Imagenes/pile_of_angry_birds_by_gav_imp-d4b2xol.png" style="width:422px; margin-left:870px; margin-top:-680px"/>
+     -->
+    <img src="../Imagenes/pile_of_angry_birds_by_gav_imp-d4b2xol.png" style="width:422px; margin-left:870px; margin-top:-780px"/>
 </body>
 </html>

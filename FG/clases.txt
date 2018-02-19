@@ -1,0 +1,40 @@
+ public class RecursoEducativo
+    {
+        [Key]
+        public int  IdRecursoEd{ get; set; }
+        public string RecursoNombre { get; set; }
+        public string  RecursoDescripcion { get; set; }
+        public string RecursoTipo { get; set; }
+
+        public string Metadatos { get; set; }
+        public int IdLeccion { get; set; }
+        public Lecciones Lecciones{ get; set; }
+    }
+
+  public class Ejercicio
+    {
+        [Key]
+        public int IdEjercicio { get; set; }
+        public int NombreEjercicio { get; set; }
+        public string NivelDificultad { get; set; }
+        public int IdRecursoEd { get; set; }
+        public RecursoEducativo RecursoEducativo{ get; set; }
+    }
+
+   public class Preguntas
+    {
+        [Key]
+        public int PreguntaId { get; set; }
+        public string pregunta { get; set; }
+        public string opt1 { get; set; }
+        public string opt2 { get; set; }
+        public string opt3 { get; set; }
+        public string opt4 { get; set; }
+        public string contador { get; set; }
+        public string Respuesta { get; set; }
+        //public int  IdEjercicio{ get; set; }
+        public Ejercicio Ejercicio { get; set; }
+        public Curso Curso { get; set; }
+        public Lecciones Lecciones{ get; set; }
+        public Tema Tema{ get; set; }
+    }

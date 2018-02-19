@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CONTENEDOR", "FG.Dominio\CO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Seguridad", "Game.Seguridad\Game.Seguridad.csproj", "{9EEC4CE8-52ED-4057-9054-A9B683DDA445}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecursoEducativo", "RecursoEducativo\RecursoEducativo.csproj", "{416D14D3-16B4-40E2-9282-6312FB683FC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9EEC4CE8-52ED-4057-9054-A9B683DDA445}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EEC4CE8-52ED-4057-9054-A9B683DDA445}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EEC4CE8-52ED-4057-9054-A9B683DDA445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{416D14D3-16B4-40E2-9282-6312FB683FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{416D14D3-16B4-40E2-9282-6312FB683FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{416D14D3-16B4-40E2-9282-6312FB683FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{416D14D3-16B4-40E2-9282-6312FB683FC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
