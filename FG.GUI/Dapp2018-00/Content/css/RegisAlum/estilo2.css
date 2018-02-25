@@ -1,0 +1,13 @@
+﻿body {
+}
+h2{
+    text-align:center;
+}
+.contenedor{
+    border-style: none;
+    border-color: inherit;
+    border-width: 5px;
+    width:30% !important;
+    margin-top:-60px%;
+    margin-left:300px;
+    }

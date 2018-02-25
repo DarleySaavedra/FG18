@@ -1,0 +1,73 @@
+ public   class Curso
+    {
+        [Key]
+        public int IdCurso{ get; set; }
+        public string NombreCurso { get; set; }
+       
+    }
+
+
+ public class Tema
+    {
+        [Key]
+        public int IdTema{ get; set; }
+        public string NombreTema{ get; set; }
+
+        public string  Periodo{ get; set; }
+        public string Descripcion { get; set; }
+
+        public string NombreCurso{ get; set; }
+
+        public Curso Curso { get; set; } 
+    }
+
+
+ public class Lecciones
+    {
+        [Key]
+        public int IdLeccion{ get; set; }
+        public string NombreLeccion{ get; set; }
+        public string Descripcion { get; set; }
+
+        public  string NombreTema { get; set; }
+        public Tema Tema{ get; set; }
+    }
+
+
+    public class Ejercicio
+    {
+        [Key]
+        public int IdEjercicio { get; set; }
+        public string NombreEjercicio { get; set; }
+        public string NivelDificultad { get; set; }
+        public string NombreLeccion  { get; set; }
+        public Lecciones Lecciones { get; set; }
+    }
+
+ public class Preguntas
+    {
+        [Key]
+        public int PreguntaId { get; set; }
+        public string pregunta { get; set; }
+        public string opt1 { get; set; }
+        public string opt2 { get; set; }
+        public string opt3 { get; set; }
+        public string opt4 { get; set; }
+        public string contador { get; set; }
+        public string Respuesta { get; set; }
+        //public int  IdEjercicio{ get; set; }
+        public Curso Curso{ get; set; }
+        
+    }
+
+ public class RecursoEducativo
+    {
+        [Key]
+        public int IdRecurso{ get; set; }
+        public string NombreRecurso{ get; set; }
+        public string Descripcion{ get; set; }
+
+        public string Tipo{ get; set; }
+        public string NombreLeccion{ get; set; }
+        public Lecciones Lecciones{ get; set; }
+    }
